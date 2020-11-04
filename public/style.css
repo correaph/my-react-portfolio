@@ -1,0 +1,25 @@
+.img-fluid {
+    opacity: 0.7;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: xx-large;
+}
+
+ul {
+    font-family: 'Cherry Swash', cursive;
+}
+
+.navbar-brand {
+    font-family: 'Courgette', cursive;
+}
+
+a,
+span {
+    display: inline-block;
+}
