@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/correaph/my-react-portfolio/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/correaph/my-react-portfolio/static/js/main.9b637de6.chunk.js",
+    "main.js.map": "/correaph/my-react-portfolio/static/js/main.9b637de6.chunk.js.map",
+    "runtime-main.js": "/correaph/my-react-portfolio/static/js/runtime-main.6db1e840.js",
+    "runtime-main.js.map": "/correaph/my-react-portfolio/static/js/runtime-main.6db1e840.js.map",
+    "static/js/2.0e4624b2.chunk.js": "/correaph/my-react-portfolio/static/js/2.0e4624b2.chunk.js",
+    "static/js/2.0e4624b2.chunk.js.map": "/correaph/my-react-portfolio/static/js/2.0e4624b2.chunk.js.map",
+    "static/js/3.fa37adc1.chunk.js": "/correaph/my-react-portfolio/static/js/3.fa37adc1.chunk.js",
+    "static/js/3.fa37adc1.chunk.js.map": "/correaph/my-react-portfolio/static/js/3.fa37adc1.chunk.js.map",
+    "index.html": "/correaph/my-react-portfolio/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/correaph/my-react-portfolio/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.0e4624b2.chunk.js.LICENSE.txt": "/correaph/my-react-portfolio/static/js/2.0e4624b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6db1e840.js",
+    "static/js/2.0e4624b2.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.9b637de6.chunk.js"
+  ]
+}
