@@ -7,7 +7,7 @@ import Portfolio from "./Portfolio";
 function App() {
   return (
     <BrowserRouter>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <Link to="/" className="navbar-brand">Paulo H Corrêa</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -17,10 +17,10 @@ function App() {
             <li className="nav-item active">
               <Link to="/" className="nav-link">About</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link to="/portfolio" className="nav-link">Portfolio</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link to="/contact" className="nav-link">Contact</Link>
             </li>
           </ul>

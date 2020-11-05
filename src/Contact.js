@@ -1,4 +1,5 @@
 import React from 'react'; 
+import img from './assets/img/contact.jpg';
 
 function Contact() {
   return (
@@ -6,7 +7,7 @@ function Contact() {
       <div className="jumbotron">
         <div className="row">
           <div className="col-6">
-            <img src="assets/img/contact.jpg" class="img-fluid" alt="Rainbow mountains in Peru"></img>
+            <img src={img} className="img-fluid" alt="Rainbow mountains in Peru"></img>
             </div>
             <div className="col-sm-0 lg-6">
               <h1 className="display-4 text-center">Contact</h1>

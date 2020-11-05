@@ -1,4 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import imgBurger from './assets/img/Burger.png';
+import imgRecipeHelper from './assets/img/RecipeHelper.png';
+import imgWeatherDashboard from './assets/img/WeatherDashboard.png';
+import imgDayPlanner from './assets/img/DayPlanner.png';
+import imgPasswordGenerator from './assets/img/PasswordGenerator.png';
+import imgRecipeHelper2 from './assets/img/RecipeHelper2.png';
+import imgEmployee_directory from './assets/img/employee-directory.png';
+import imgFitness_tracker from './assets/img/fitness-tracker.png';
+import imgBudget_tracker from './assets/img/budget-tracker.png';
+import imgQuiz from './assets/img/quiz.png';
 
 const projects = [
   {
@@ -41,23 +51,18 @@ const projects = [
 function Portfolio() {
   const [imgSrc, setImgSrc] = useState();
   useEffect(() => {
-    var images =
+    const images =
       [
-        "Burger.png", "RecipeHelper.png", "WeatherDashboard.png", "DayPlanner.png",
-        "PasswordGenerator.png", "RecipeHelper2.png", "employee-directory.png", "fitness-tracker.png",
-        "budget-tracker.png", "quiz.png"
+        imgBurger, imgRecipeHelper, imgWeatherDashboard, imgDayPlanner, imgPasswordGenerator, imgRecipeHelper2,
+        imgEmployee_directory, imgFitness_tracker, imgBudget_tracker, imgQuiz
       ];
-    var nrImg = Math.floor(Math.random() * images.length);
-    var img = document.getElementsByClassName("img-fluid");
-    console.log("img = " + img);
-    setImgSrc("assets/img/" + images[nrImg]);
-    setInterval(function () {
-      if (++nrImg >= images.length) {
-        nrImg = 0;
-      }
-      setImgSrc("assets/img/" + images[nrImg]);
-    }, 4000);
-  },[]);
+    setImgSrc(images[0]);
+    const interval = setInterval(() => {
+      var nrImg = Math.floor(Math.random() * images.length);
+      setImgSrc(images[nrImg]);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="container-fluid">
       <div className="jumbotron">
@@ -69,9 +74,9 @@ function Portfolio() {
             <h1 className="display-4 text-center">Latest Projects</h1>
             <hr className="my-4"></hr>
             <ul>
-              {projects.map((project) => {
+              {projects.map((project, idx) => {
                 return (
-                  <li>{project.name}
+                  <li key={idx}>{project.name}
                     <ul>
                       <li>Source Code: <a target="_blank" rel="noreferrer" href={project.sourceCode}>{project.sourceCode}</a></li>
                       <li>Deployed at: <a target="_blank" rel="noreferrer" href={project.deployedAt}>{project.deployedAt}</a></li>
