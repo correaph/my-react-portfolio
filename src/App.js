@@ -4,6 +4,14 @@ import MainPage from "./MainPage";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 
+const handleRoute = (e) => {
+  var route = e.target.getAttribute("id");
+  document.getElementById("link1").classList.remove("active");
+  document.getElementById("link1").classList.remove("active"); 
+  document.getElementById("link1").classList.remove("active");
+  document.getElementById(route.replace('route','link')).classList.add("active");
+};
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,22 +22,22 @@ function App() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item active">
-              <Link to="/" className="nav-link">About</Link>
+            <li className="nav-item active" id="route1">
+              <Link to="/" className="nav-link" id="link1" onClick={handleRoute}>About</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/portfolio" className="nav-link">Portfolio</Link>
+            <li className="nav-item" id="route2">
+              <Link to="/portfolio" className="nav-link" id="link2" onClick={handleRoute}>Portfolio</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">Contact</Link>
+            <li className="nav-item" id="route3">
+              <Link to="/contact" className="nav-link" id="link3" onClick={handleRoute}>Contact</Link>
             </li>
           </ul>
         </div>
       </nav>
       <div className="content">
+        <Route path="/" exact={true} component={MainPage} />
         <Route path="/contact" component={Contact} />
         <Route path="/portfolio" component={Portfolio} />
-        <Route path="/" exact={true} component={MainPage} />
       </div>
     </BrowserRouter>
   );
