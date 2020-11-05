@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import React from 'react'; 
 
 function Contact() {
   return (
@@ -14,7 +14,7 @@ function Contact() {
               <ul>
                 <li>Skype: correaph </li>
                 <li>E-mail: <a target="_blank" rel="noreferrer" href="henriqueph@hotmail.com">henriqueph@hotmail.com</a></li>
-                <li>LinkedIn: <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/henriqueph/">https://www.linkedin.com/in/henriqueph/></a></li>
+                <li>LinkedIn: <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/henriqueph">https://www.linkedin.com/in/henriqueph</a></li>
               </ul>
             </div>
           </div>

@@ -1,6 +1,8 @@
+import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import MainPage from "./MainPage";
 import Contact from "./Contact";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
       </nav>
       <div className="content">
         <Route path="/contact" component={Contact} />
+        <Route path="/portfolio" component={Portfolio} />
         <Route path="/" exact={true} component={MainPage} />
       </div>
     </BrowserRouter>
